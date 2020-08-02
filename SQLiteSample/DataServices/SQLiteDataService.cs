@@ -30,12 +30,15 @@ namespace SQLiteSample.DataServices
                 return new SQLiteConnection(new SQLiteConnectionString(DbPath));
             }
         }
-        public void CreateDatabase()
+        public static void InitializeDatabase()
         {
             using (var db = DbConnection)
             {
-                var c = db.CreateTable<Post>();
-                DummyData.GetDummyData().ForEach(post => db.InsertOrReplace(post));
+                var result = db.CreateTable<Post>();
+                if (result == CreateTableResult.Created)
+                {
+                    DummyData.GetDummyData().ForEach(post => db.InsertOrReplace(post));
+                }
             }
         }
 
