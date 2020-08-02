@@ -25,7 +25,7 @@ namespace DataAccessLayer.DummyDataService
                     AuthorName = "MacKenzie Langley",
                     PublishDate=new DateTime(2020, 6, 21, 0, 0, 0, DateTimeKind.Utc),
                     Title = "13 ways cool tech gadgets could leave you needing a lawyer",
-                    Picture="http://3.bp.blogspot.com/-yjhVECX48EM/VffTStIl3PI/AAAAAAAAOto/XXcX2sP0aQc/s1600/technology_hardware-iphone5-apple_047K.jpg",
+                    Picture="http://4.bp.blogspot.com/-uX6aV9khr84/VffTRGn1HmI/AAAAAAAAOs8/4iaLwMcj0ZA/s1600/technology_android-user-with-coffee_043K.jpg",
                     Content = @"Why the world would end without devices. 13 great articles about open source software. 11 least favorite passport applications. The 10 worst songs about future technologies. An expert interview about business software. 13 secrets about computer support specialists the government is hiding. Why open source software will make you question everything. How storage devices changed how we think about death. 18 problems with life technologies. How cool tech gadgets aren't as bad as you think.
 The complete beginner's guide to passport applications. Why our world would end if new inventions disappeared. How to be unpopular in the accessory world. How wholesale accessories can help you live a better life. The 12 best dollar general application youtube videos. Why our world would end if cool tech gadgets disappeared. The evolution of business software. 19 uses for business software. Why you shouldn't eat open source software in bed. 15 things that won't happen in tech reviews."
                  },

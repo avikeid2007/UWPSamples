@@ -1,7 +1,9 @@
 ﻿#define SQLite
+using SQLiteSample.DataServices;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -20,6 +22,7 @@ namespace SQLiteSample
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            SQLiteDataService.InitializeDatabase();
         }
 
         /// <summary>
@@ -47,6 +50,7 @@ namespace SQLiteSample
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+                SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             }
 
             if (e.PrelaunchActivated == false)
@@ -60,6 +64,7 @@ namespace SQLiteSample
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
+
             }
         }
 

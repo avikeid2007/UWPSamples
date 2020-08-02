@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
 namespace DataAccessLayer.Models
@@ -12,9 +14,9 @@ namespace DataAccessLayer.Models
         private string _authorName;
         private DateTime _publishDate;
         private string _picture;
-#if SQLite
-[PrimaryKey, AutoIncrement]
-#endif
+
+        [Key]
+        [PrimaryKey, AutoIncrement]
         public int Id
         {
             get { return _id; }
