@@ -14,6 +14,7 @@ namespace DataAccessLayer.Models
         private string _authorName;
         private DateTime _publishDate;
         private string _picture;
+        private string _category;
 
         [Key]
         [PrimaryKey, AutoIncrement]
@@ -87,6 +88,15 @@ namespace DataAccessLayer.Models
                     _picture = value;
                     NotifyPropertyChanged();
                 }
+            }
+        }
+        public string Category
+        {
+            get { return _category; }
+            set
+            {
+                _category = value;
+                NotifyPropertyChanged();
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

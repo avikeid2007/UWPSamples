@@ -94,9 +94,16 @@
                                 FontSize="12"
                                 Text="{x:Bind AuthorName}" />
                             <TextBlock
+                                Margin="0,0,4,0"
                                 FontFamily="Comic Sans MS"
                                 FontSize="12"
                                 Text="{x:Bind PublishDate.Date}"
+                                TextTrimming="WordEllipsis"
+                                TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                FontFamily="Comic Sans MS"
+                                FontSize="12"
+                                Text="{x:Bind Category}"
                                 TextTrimming="WordEllipsis"
                                 TextWrapping="WrapWholeWords" />
                         </StackPanel>
